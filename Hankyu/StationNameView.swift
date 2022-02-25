@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct StationNameView: View {
-    var stationName: String
-    @State private var stationNameEnglish = "Osaka-umeda"
+    var station: Station
     
     var body: some View {
         VStack {
-            Text(stationName)
+            Text(station.name)
                 .font(.largeTitle)
-                .fontWeight(.heavy)
-            Text(stationNameEnglish)
+                .bold()
+            Text(station.nameEnglish)
                 .font(.subheadline)
         }
     }
@@ -24,6 +23,7 @@ struct StationNameView: View {
 
 struct StationName_Previews: PreviewProvider {
     static var previews: some View {
-        StationNameView(stationName: "駅名")
+        let stations = ModelData().stations
+        StationNameView(station: stations[0])
     }
 }

@@ -4,111 +4,127 @@
         "name": "大阪梅田",
         "nameEnglish": "Osaka-umeda",
         "latitude": "34.705326",
-        "longitude": "135.498398"
+        "longitude": "135.498398",
+        "isFavorite": true
     },
     {
         "id": "02",
         "name": "中津",
         "nameEnglish": "Nakatsu",
         "latitude": "34.709851",
-        "longitude": "135.492499"
+        "longitude": "135.492499",
+        "isFavorite": false
     },
     {
         "id": "03",
         "name": "十三",
         "nameEnglish": "Juso",
         "latitude": "34.72049",
-        "longitude": "135.482198"
+        "longitude": "135.482198",
+        "isFavorite": true
     },
     {
         "id": "04",
         "name": "神崎川",
         "nameEnglish": "Kanzakigawa",
         "latitude": "34.732349",
-        "longitude": "135.472782"
+        "longitude": "135.472782",
+        "isFavorite": false
     },
     {
         "id": "05",
         "name": "園田",
         "nameEnglish": "Sonoda",
         "latitude": "34.751903",
-        "longitude": "135.448145"
+        "longitude": "135.448145",
+        "isFavorite": false
     },
     {
         "id": "06",
         "name": "塚口",
         "nameEnglish": "Tsukaguchi",
         "latitude": "34.752968",
-        "longitude": "135.416376"
+        "longitude": "135.416376",
+        "isFavorite": false
     },
     {
         "id": "07",
         "name": "武庫之荘",
         "nameEnglish": "Mukonoso",
         "latitude": "34.751596",
-        "longitude": "135.393428"
+        "longitude": "135.393428",
+        "isFavorite": false
     },
     {
         "id": "08",
         "name": "西宮北口",
         "nameEnglish": "Nishinomiya-kitaguchi",
         "latitude": "34.745956",
-        "longitude": "135.356597"
+        "longitude": "135.356597",
+        "isFavorite": true
     },
     {
         "id": "09",
         "name": "夙川",
         "nameEnglish": "Shukugawa",
         "latitude": "34.742262",
-        "longitude": "135.328128"
+        "longitude": "135.328128",
+        "isFavorite": true
     },
     {
         "id": "10",
         "name": "芦屋川",
         "nameEnglish": "Ashiyagawa",
         "latitude": "34.736568",
-        "longitude": "135.300937"
+        "longitude": "135.300937",
+        "isFavorite": false
     },
     {
         "id": "11",
         "name": "岡本",
         "nameEnglish": "Okamoto",
         "latitude": "34.729151",
-        "longitude": "135.275827"
+        "longitude": "135.275827",
+        "isFavorite": true
     },
     {
         "id": "12",
         "name": "御影",
         "nameEnglish": "Mikage",
         "latitude": "34.724559",
-        "longitude": "135.252254"
+        "longitude": "135.252254",
+        "isFavorite": false
     },
     {
         "id": "13",
         "name": "六甲",
         "nameEnglish": "Rokko",
         "latitude": "34.719652",
-        "longitude": "135.23429"
+        "longitude": "135.23429",
+        "isFavorite": false
     },
     {
         "id": "14",
         "name": "王子公園",
         "nameEnglish": "Ojikoen",
         "latitude": "34.710262",
-        "longitude": "135.218527"
+        "longitude": "135.218527",
+        "isFavorite": false
     },
     {
         "id": "15",
         "name": "春日野道",
         "nameEnglish": "Kasuganomichi",
         "latitude": "34.703103",
-        "longitude": "135.205507"
+        "longitude": "135.205507",
+        "isFavorite": false
     },
     {
         "id": "16",
         "name": "神戸三宮",
         "nameEnglish": "Kobe-sannnomiya",
         "latitude": "34.693143",
-        "longitude": "135.192847"
+        "longitude": "135.192847",
+        "isFavorite": true
     }
 ]

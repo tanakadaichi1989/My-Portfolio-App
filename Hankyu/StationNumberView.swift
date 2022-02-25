@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct StationNumberView: View {
-    @State private var hk = "HK"
-    var stationNumber:Int
+
+    var station: Station
+    var size: CGFloat = 30
     
     var body: some View {
         ZStack{
             Circle()
-                .stroke(.blue, lineWidth: 3)
-                .frame(width: 30, height: 30)
+                .stroke(.blue, lineWidth: size * 0.1)
+                .frame(width: size, height: size)
             VStack {
-                Text(hk)
+                Text("HK")
                     .fontWeight(.heavy)
                     .foregroundColor(Color.blue)
-                    .font(.system(size: 7, weight: .black, design: .default))
-                Text(String(stationNumber))
+                    .font(.system(size: size * 0.3, weight: .black, design: .default))
+                Text(station.id)
                     .fontWeight(.heavy)
                     .foregroundColor(Color.blue)
-                    .font(.system(size: 10, weight: .black, design: .default))
+                    .font(.system(size: size * 0.4, weight: .black, design: .default))
             }
 
         }
@@ -33,6 +34,7 @@ struct StationNumberView: View {
 
 struct StationNumber_Previews: PreviewProvider {
     static var previews: some View {
-        StationNumberView(stationNumber: 01)
+        let stations = ModelData().stations
+        StationNumberView(station: stations[0], size: 30)
     }
 }
