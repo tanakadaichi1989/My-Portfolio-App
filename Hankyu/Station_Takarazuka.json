@@ -1,0 +1,192 @@
+[
+    {
+        "id": "takarazuka01",
+        "numbering": "01",
+        "line": "Takarazuka",
+        "name": "大阪梅田",
+        "nameEnglish": "Osaka-umeda",
+        "latitude": "34.705326",
+        "longitude": "135.498398",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka02",
+        "numbering": "02",
+        "line": "Takarazuka",
+        "name": "中津",
+        "nameEnglish": "Nakatsu",
+        "latitude": "34.709851",
+        "longitude": "135.492499",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka03",
+        "numbering": "03",
+        "line": "Takarazuka",
+        "name": "十三",
+        "nameEnglish": "Juso",
+        "latitude": "34.72049",
+        "longitude": "135.482198",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka41",
+        "numbering": "41",
+        "line": "Takarazuka",
+        "name": "三国",
+        "nameEnglish": "Mikuni",
+        "latitude": "34.737446",
+        "longitude": "135.483041",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka42",
+        "numbering": "42",
+        "line": "Takarazuka",
+        "name": "庄内",
+        "nameEnglish": "Shonai",
+        "latitude": "34.750486",
+        "longitude": "135.475115",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka43",
+        "numbering": "43",
+        "line": "Takarazuka",
+        "name": "服部天神",
+        "nameEnglish": "Hattoritenjin",
+        "latitude": "34.763207",
+        "longitude": "135.474975",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka44",
+        "numbering": "44",
+        "line": "Takarazuka",
+        "name": "曽根",
+        "nameEnglish": "Sone",
+        "latitude": "34.771012",
+        "longitude": "135.467588",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka45",
+        "numbering": "45",
+        "line": "Takarazuka",
+        "name": "岡町",
+        "nameEnglish": "Okamachi",
+        "latitude": "34.778816",
+        "longitude": "135.465087",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka46",
+        "numbering": "46",
+        "line": "Takarazuka",
+        "name": "豊中",
+        "nameEnglish": "Toyonaka",
+        "latitude": "34.787416",
+        "longitude": "135.461802",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka47",
+        "numbering": "47",
+        "line": "Takarazuka",
+        "name": "蛍池",
+        "nameEnglish": "Hotarugaike",
+        "latitude": "34.794611",
+        "longitude": "135.449306",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka48",
+        "numbering": "48",
+        "line": "Takarazuka",
+        "name": "石橋阪大前",
+        "nameEnglish": "Ishimashi-handai-mae",
+        "latitude": "34.808146",
+        "longitude": "135.445783",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka49",
+        "numbering": "49",
+        "line": "Takarazuka",
+        "name": "池田",
+        "nameEnglish": "Ikeda",
+        "latitude": "34.821339",
+        "longitude": "135.425839",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka50",
+        "numbering": "50",
+        "line": "Takarazuka",
+        "name": "川西能勢口",
+        "nameEnglish": "Kawanishi-noseguchi",
+        "latitude": "34.827681",
+        "longitude": "135.413063",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka51",
+        "numbering": "51",
+        "line": "Takarazuka",
+        "name": "雲雀丘花屋敷",
+        "nameEnglish": "Hibarigaoka-hanayashiki",
+        "latitude": "34.827421",
+        "longitude": "135.40309",
+        "isFavorite": true
+    },
+    {
+        "id": "takarazuka52",
+        "numbering": "52",
+        "line": "Takarazuka",
+        "name": "山本",
+        "nameEnglish": "Yamamoto",
+        "latitude": "34.821865",
+        "longitude": "135.387953",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka53",
+        "numbering": "53",
+        "line": "Takarazuka",
+        "name": "中山観音",
+        "nameEnglish": "Nakayamakannon",
+        "latitude": "34.819559",
+        "longitude": "135.369288",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka54",
+        "numbering": "54",
+        "line": "Takarazuka",
+        "name": "売布神社",
+        "nameEnglish": "Mefujinja",
+        "latitude": "34.815893",
+        "longitude": "135.361372",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka55",
+        "numbering": "55",
+        "line": "Takarazuka",
+        "name": "清荒神",
+        "nameEnglish": "Kiyoshikojin",
+        "latitude": "34.811199",
+        "longitude": "135.353429",
+        "isFavorite": false
+    },
+    {
+        "id": "takarazuka56",
+        "numbering": "56",
+        "line": "Takarazuka",
+        "name": "宝塚",
+        "nameEnglish": "Takarazuka",
+        "latitude": "34.810594",
+        "longitude": "135.340882",
+        "isFavorite": true
+    }
+]

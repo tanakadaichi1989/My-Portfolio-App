@@ -27,7 +27,7 @@ struct StationRow: View {
                     .frame(width: 15, height: 15)
                     .foregroundColor(.pink)
             }
-            
+
         }
         .padding()
     }

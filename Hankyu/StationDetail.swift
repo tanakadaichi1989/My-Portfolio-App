@@ -12,7 +12,7 @@ struct StationDetail: View {
     var station: Station
     
     var stationIndex: Int {
-        modelData.stations.firstIndex(where: { $0.id == station.id})!
+        $modelData.stations.firstIndex(where: { $0.id == station.id})!
     }
     
     var body: some View {

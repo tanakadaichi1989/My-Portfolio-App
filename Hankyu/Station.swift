@@ -11,6 +11,8 @@ import MapKit
 
 struct Station: Hashable, Codable, Identifiable {
     var id: String
+    var numbering: String
+    var line: Line
     var name: String
     var nameEnglish: String
     var latitude: String
@@ -31,24 +33,24 @@ struct Station: Hashable, Codable, Identifiable {
     
     func getNextStation() -> Station? {
         let stations = ModelData().stations
-        
         guard let currentStationIndex = stations.firstIndex(where: { $0.id == self.id}) else { return nil }
-        
+
         let nextStationIndex = currentStationIndex + 1
-        
         guard nextStationIndex < stations.count else { return nil }
+
+        guard stations[currentStationIndex].line == stations[nextStationIndex].line else { return nil}
         
         return stations[nextStationIndex]
     }
     
     func getPreviousStation() -> Station? {
         let stations = ModelData().stations
-        
         guard let currentStationIndex = stations.firstIndex(where: { $0.id == self.id}) else { return nil }
         
         let previousStationIndex = currentStationIndex - 1
-        
         guard previousStationIndex >= 0 else { return nil }
+        
+        guard stations[currentStationIndex].line == stations[previousStationIndex].line else { return nil}
         
         return stations[previousStationIndex]
     }

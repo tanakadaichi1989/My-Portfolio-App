@@ -1,0 +1,164 @@
+[
+    {
+        "id": "kobe01",
+        "numbering": "01",
+        "line": "Kobe",
+        "name": "大阪梅田",
+        "nameEnglish": "Osaka-umeda",
+        "latitude": "34.705326",
+        "longitude": "135.498398",
+        "isFavorite": true
+    },
+    {
+        "id": "kobe02",
+        "numbering": "02",
+        "line": "Kobe",
+        "name": "中津",
+        "nameEnglish": "Nakatsu",
+        "latitude": "34.709851",
+        "longitude": "135.492499",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe03",
+        "numbering": "03",
+        "line": "Kobe",
+        "name": "十三",
+        "nameEnglish": "Juso",
+        "latitude": "34.72049",
+        "longitude": "135.482198",
+        "isFavorite": true
+    },
+    {
+        "id": "kobe04",
+        "numbering": "04",
+        "line": "Kobe",
+        "name": "神崎川",
+        "nameEnglish": "Kanzakigawa",
+        "latitude": "34.732349",
+        "longitude": "135.472782",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe05",
+        "numbering": "05",
+        "line": "Kobe",
+        "name": "園田",
+        "nameEnglish": "Sonoda",
+        "latitude": "34.751903",
+        "longitude": "135.448145",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe06",
+        "numbering": "06",
+        "line": "Kobe",
+        "name": "塚口",
+        "nameEnglish": "Tsukaguchi",
+        "latitude": "34.752968",
+        "longitude": "135.416376",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe07",
+        "numbering": "07",
+        "line": "Kobe",
+        "name": "武庫之荘",
+        "nameEnglish": "Mukonoso",
+        "latitude": "34.751596",
+        "longitude": "135.393428",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe08",
+        "numbering": "08",
+
+        "line": "Kobe",
+        "name": "西宮北口",
+        "nameEnglish": "Nishinomiya-kitaguchi",
+        "latitude": "34.745956",
+        "longitude": "135.356597",
+        "isFavorite": true
+    },
+    {
+        "id": "kobe09",
+        "numbering": "09",
+        "line": "Kobe",
+        "name": "夙川",
+        "nameEnglish": "Shukugawa",
+        "latitude": "34.742262",
+        "longitude": "135.328128",
+        "isFavorite": true
+    },
+    {
+        "id": "kobe10",
+        "numbering": "10",
+
+        "line": "Kobe",
+        "name": "芦屋川",
+        "nameEnglish": "Ashiyagawa",
+        "latitude": "34.736568",
+        "longitude": "135.300937",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe11",
+        "numbering": "11",
+        "line": "Kobe",
+        "name": "岡本",
+        "nameEnglish": "Okamoto",
+        "latitude": "34.729151",
+        "longitude": "135.275827",
+        "isFavorite": true
+    },
+    {
+        "id": "kobe12",
+        "numbering": "12",
+        "line": "Kobe",
+        "name": "御影",
+        "nameEnglish": "Mikage",
+        "latitude": "34.724559",
+        "longitude": "135.252254",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe13",
+        "numbering": "13",
+        "line": "Kobe",
+        "name": "六甲",
+        "nameEnglish": "Rokko",
+        "latitude": "34.719652",
+        "longitude": "135.23429",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe14",
+        "numbering": "14",
+        "line": "Kobe",
+        "name": "王子公園",
+        "nameEnglish": "Ojikoen",
+        "latitude": "34.710262",
+        "longitude": "135.218527",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe15",
+        "numbering": "15",
+        "line": "Kobe",
+        "name": "春日野道",
+        "nameEnglish": "Kasuganomichi",
+        "latitude": "34.703103",
+        "longitude": "135.205507",
+        "isFavorite": false
+    },
+    {
+        "id": "kobe16",
+        "numbering": "16",
+        "line": "Kobe",
+        "name": "神戸三宮",
+        "nameEnglish": "Kobe-sannnomiya",
+        "latitude": "34.693143",
+        "longitude": "135.192847",
+        "isFavorite": true
+    }
+]

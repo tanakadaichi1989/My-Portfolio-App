@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct HankyuApp: App {
     @StateObject private var modelData = ModelData()

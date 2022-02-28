@@ -1,0 +1,282 @@
+[
+    {
+        "id": "kyoto01",
+        "numbering": "01",
+        "line": "Kyoto",
+        "name": "大阪梅田",
+        "nameEnglish": "Osaka-umeda",
+        "latitude": "34.705326",
+        "longitude": "135.498398",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto03",
+        "numbering": "03",
+        "line": "Kyoto",
+        "name": "十三",
+        "nameEnglish": "Juso",
+        "latitude": "34.72049",
+        "longitude": "135.482198",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto61",
+        "numbering": "61",
+        "line": "Kyoto",
+        "name": "南方",
+        "nameEnglish": "Minamikata",
+        "latitude": "34.725741",
+        "longitude": "135.499558",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto62",
+        "numbering": "62",
+        "line": "Kyoto",
+        "name": "崇禅寺",
+        "nameEnglish": "Souzenji",
+        "latitude": "34.731045",
+        "longitude": "135.510224",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto63",
+        "numbering": "63",
+        "line": "Kyoto",
+        "name": "淡路",
+        "nameEnglish": "Awaji",
+        "latitude": "34.739406",
+        "longitude": "135.517029",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto64",
+        "numbering": "64",
+        "line": "Kyoto",
+        "name": "上新庄",
+        "nameEnglish": "Kamishinjo",
+        "latitude": "34.750183",
+        "longitude": "135.532916",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto65",
+        "numbering": "65",
+        "line": "Kyoto",
+        "name": "相川",
+        "nameEnglish": "Aikawa",
+        "latitude": "34.757431",
+        "longitude": "135.533526",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto66",
+        "numbering": "66",
+        "line": "Kyoto",
+        "name": "正雀",
+        "nameEnglish": "Shojaku",
+        "latitude": "34.775402",
+        "longitude": "135.545607",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto67",
+        "numbering": "67",
+        "line": "Kyoto",
+        "name": "摂津市",
+        "nameEnglish": "Settsu-shi",
+        "latitude": "34.786818",
+        "longitude": "135.553996",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto68",
+        "numbering": "68",
+        "line": "Kyoto",
+        "name": "南茨木",
+        "nameEnglish": "Minami-ibaraki",
+        "latitude": "34.802172",
+        "longitude": "135.564989",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto69",
+        "numbering": "69",
+        "line": "Kyoto",
+        "name": "茨木市",
+        "nameEnglish": "Ibaraki-shi",
+        "latitude": "34.816621",
+        "longitude": "135.575714",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto70",
+        "numbering": "70",
+        "line": "Kyoto",
+        "name": "総持寺",
+        "nameEnglish": "Soujiji",
+        "latitude": "34.827259",
+        "longitude": "135.584741",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto71",
+        "numbering": "71",
+        "line": "Kyoto",
+        "name": "富田",
+        "nameEnglish": "Tonda",
+        "latitude": "34.835202",
+        "longitude": "135.592685",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto72",
+        "numbering": "72",
+        "line": "Kyoto",
+        "name": "高槻市",
+        "nameEnglish": "Takatsuki-shi",
+        "latitude": "34.85009",
+        "longitude": "135.623404",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto73",
+        "numbering": "73",
+        "line": "Kyoto",
+        "name": "上牧",
+        "nameEnglish": "Kammaki",
+        "latitude": "34.87206",
+        "longitude": "135.661734",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto74",
+        "numbering": "74",
+        "line": "Kyoto",
+        "name": "水無瀬",
+        "nameEnglish": "Minase",
+        "latitude": "34.877782",
+        "longitude": "135.667705",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto75",
+        "numbering": "75",
+        "line": "Kyoto",
+        "name": "大山崎",
+        "nameEnglish": "Oyamazaki",
+        "latitude": "34.89153",
+        "longitude": "135.681709",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto76",
+        "numbering": "76",
+        "line": "Kyoto",
+        "name": "西山天王山",
+        "nameEnglish": "Nishiyama-Tennozan",
+        "latitude": "34.91305",
+        "longitude": "135.688533",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto77",
+        "numbering": "77",
+        "line": "Kyoto",
+        "name": "長岡天神",
+        "nameEnglish": "Nagaokatenjin",
+        "latitude": "34.924722",
+        "longitude": "135.692451",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto78",
+        "numbering": "78",
+        "line": "Kyoto",
+        "name": "西向日",
+        "nameEnglish": "Nishimuko",
+        "latitude": "34.939859",
+        "longitude": "135.7027",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto79",
+        "numbering": "79",
+        "line": "Kyoto",
+        "name": "東向日",
+        "nameEnglish": "Higashimuko",
+        "latitude": "34.954024",
+        "longitude": "135.70456",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto80",
+        "numbering": "80",
+        "line": "Kyoto",
+        "name": "洛西口",
+        "nameEnglish": "Rakusaiguchi",
+        "latitude": "34.963687",
+        "longitude": "135.703132",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto81",
+        "numbering": "81",
+        "line": "Kyoto",
+        "name": "桂",
+        "nameEnglish": "Katsura",
+        "latitude": "34.979438",
+        "longitude": "135.703309",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto82",
+        "numbering": "82",
+        "line": "Kyoto",
+        "name": "西京極",
+        "nameEnglish": "Nishikyogoku",
+        "latitude": "34.992548",
+        "longitude": "135.718446",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto83",
+        "numbering": "83",
+        "line": "Kyoto",
+        "name": "西院",
+        "nameEnglish": "Saiin",
+        "latitude": "35.003581",
+        "longitude": "135.732737",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto84",
+        "numbering": "84",
+        "line": "Kyoto",
+        "name": "大宮",
+        "nameEnglish": "Omiya",
+        "latitude": "35.003659",
+        "longitude": "135.749388",
+        "isFavorite": false
+    },
+    {
+        "id": "kyoto85",
+        "numbering": "85",
+        "line": "Kyoto",
+        "name": "烏丸",
+        "nameEnglish": "Karasuma",
+        "latitude": "35.003548",
+        "longitude": "135.75972",
+        "isFavorite": true
+    },
+    {
+        "id": "kyoto86",
+        "numbering": "86",
+        "line": "Kyoto",
+        "name": "京都河原町",
+        "nameEnglish": "Kyoto-kawaramachi",
+        "latitude": "35.003826",
+        "longitude": "135.768525",
+        "isFavorite": true
+    }
+]

@@ -30,7 +30,6 @@ struct NextStationView: View {
 }
 
 struct NextStationView_Previews: PreviewProvider {
-    
     static var previews: some View {
         NextStationView(station: ModelData().stations[7])
     }
