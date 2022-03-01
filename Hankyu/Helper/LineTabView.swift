@@ -11,7 +11,7 @@ import MapKit
 struct LineTabView: View {
     
     @Binding var selection: Line
-    let geometrySize: CGSize
+    var geometrySize: CGSize
     
     var body: some View {
         HStack(spacing: .zero) {
@@ -22,11 +22,11 @@ struct LineTabView: View {
                         print("\(line.getLineName())を選択しました")
                     } label: {
                         Text("\(line.getLineName())")
-                            .font(.headline)
+                            .font(.body)
                             .fontWeight(.heavy)
                             .foregroundColor(self.selection == line ? line.getLineColor() : .gray)
                     }
-                    .frame(width: geometrySize.width /  CGFloat(Line.allCases.count), height: 30)
+                    .frame(width: geometrySize.width /  CGFloat(Line.allCases.count), height: 25)
                     
                     Rectangle()
                         .fill(self.selection == line ? line.getLineColor() : .gray)
@@ -39,7 +39,8 @@ struct LineTabView: View {
 }
 
 struct LineTabView_Previews: PreviewProvider {
+    static var geometry: CGSize = CGSize(width: 200, height: 44)
     static var previews: some View {
-        LineTabView(selection: .constant(.Takarazuka), geometrySize: CGSize(width: 200, height: 44))
+        LineTabView(selection: .constant(.Takarazuka), geometrySize: geometry)
     }
 }

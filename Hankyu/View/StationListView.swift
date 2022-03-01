@@ -11,7 +11,7 @@ struct StationListView: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoriteOnly = false
     @State private var selection: Line = .Takarazuka
-    
+
     var filteredStations: [Station] {
         modelData.stations.filter { station in
             (!showFavoriteOnly || station.isFavorite) && station.line == selection
@@ -41,6 +41,7 @@ struct StationListView: View {
                 }
                 .navigationBarTitle("駅一覧",displayMode: .inline)
             }
+            .navigationViewStyle(.stack)
         }
     }
 }
