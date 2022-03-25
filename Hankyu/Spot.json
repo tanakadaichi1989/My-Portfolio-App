@@ -1,0 +1,20 @@
+[
+    {
+        "id": "spot01",
+        "name": "スポット01",
+        "imageURL": null,
+        "nearStationID": "takarazuka10"
+    },
+    {
+        "id": "spot02",
+        "name": "スポット02",
+        "imageURL": null,
+        "nearStationID": "kobe14"
+    },
+    {
+        "id": "spot03",
+        "name": "スポット03",
+        "imageURL": null,
+        "nearStationID": "kyoto85"
+    }
+]
