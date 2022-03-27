@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Spot: Hashable, Decodable, Identifiable {
+    var id: String
+    var name: String
+    var imageURL: String?
+    var nearStationID: String
+}
+

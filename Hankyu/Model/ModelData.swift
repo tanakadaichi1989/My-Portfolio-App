@@ -10,6 +10,12 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var stations: [Station] = load("Station_Takarazuka.json") + load("Station_Kobe.json") + load("Station_Kyoto.json")
+    @Published var spots: [Spot] = load("Spot.json")
+    
+    func getStation(from stationID: String) -> Station? {
+        guard let station = stations.first(where: { $0.id == stationID }) else { return nil }
+        return station
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
@@ -30,5 +36,31 @@ func load<T: Decodable>(_ filename: String) -> T {
         return try decoder.decode(T.self, from: data)
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
+}
+
+
+func fetchAPI<T: Decodable>(_ address: String) -> T {
+    var result: Data = Data()
+    
+    guard let url = URL(string: address) else {
+        fatalError("Couldn't find address \(address)")
+    }
+    
+    let request = URLRequest(url: url)
+    
+    URLSession.shared.dataTask(with: request, completionHandler: {(data,response,error) in
+        if let unwrappedData = data {
+            result = unwrappedData
+        }
+    })
+    .resume()
+    
+    do {
+        let decoder = JSONDecoder()
+        print(try decoder.decode(T.self, from: result))
+        return try decoder.decode(T.self, from: result)
+    } catch {
+        fatalError("Couldn't parse \(address) as \(T.self):\n\(error)")
     }
 }

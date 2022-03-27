@@ -32,4 +32,8 @@ enum Line: String, Codable, CaseIterable {
     func getLineNameEnglish() -> String {
         "\(self.rawValue) Line"
     }
+    
+    func getLineFrom(station: Station) -> Line {
+        station.line
+    }
 }

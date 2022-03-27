@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct SpotRow: View {
+    @EnvironmentObject private var modelData: ModelData
+    var spot: Spot
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(spot.name)
+            Text(spot.imageURL ?? "画像なし")
+            Text(modelData.getStation(from: spot.nearStationID)?.name ?? "")
+        }
+        .frame(width: 200, height: 100)
+        .cornerRadius(5)
     }
 }
 
+
 struct SpotRow_Previews: PreviewProvider {
     static var previews: some View {
-        SpotRow()
+        SpotRow(spot: ModelData().spots[0])
     }
 }
