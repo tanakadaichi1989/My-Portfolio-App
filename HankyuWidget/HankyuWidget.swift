@@ -44,7 +44,8 @@ struct HankyuWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        LineWidgetView()
+            .padding()
     }
 }
 
@@ -58,6 +59,7 @@ struct HankyuWidget: Widget {
         }
         .configurationDisplayName("Hankyu")
         .description("This is Hankyu App widget.")
+        .supportedFamilies([.systemSmall])
     }
 }
 

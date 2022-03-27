@@ -37,6 +37,17 @@
 		A192572027F0325D007FBB63 /* HankyuWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */; };
 		A192572127F0325D007FBB63 /* HankyuWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */; };
 		A192572427F0325D007FBB63 /* HankyuWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A192571327F0325C007FBB63 /* HankyuWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A192573727F04FA5007FBB63 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179C46B27CE271300B23844 /* Spot.swift */; };
+		A192573927F04FA5007FBB63 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CB9B927C941DD008DCEDE /* Line.swift */; };
+		A192573A27F04FA5007FBB63 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B759527C51F160039972A /* ModelData.swift */; };
+		A192573B27F04FAD007FBB63 /* Station_Takarazuka.json in Resources */ = {isa = PBXBuildFile; fileRef = A1886BBD27CCC61400AEF59B /* Station_Takarazuka.json */; };
+		A192573C27F04FAD007FBB63 /* Station_Kobe.json in Resources */ = {isa = PBXBuildFile; fileRef = A1886BBF27CCC61C00AEF59B /* Station_Kobe.json */; };
+		A192573D27F04FAD007FBB63 /* Station_Kyoto.json in Resources */ = {isa = PBXBuildFile; fileRef = A1886BBB27CCC60F00AEF59B /* Station_Kyoto.json */; };
+		A192573F27F0515C007FBB63 /* LineWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192573E27F0515C007FBB63 /* LineWidgetView.swift */; };
+		A192574027F0517F007FBB63 /* LineWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192573E27F0515C007FBB63 /* LineWidgetView.swift */; };
+		A192574227F051AC007FBB63 /* LineRowWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192574127F051AC007FBB63 /* LineRowWidgetView.swift */; };
+		A192574327F051AC007FBB63 /* LineRowWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192574127F051AC007FBB63 /* LineRowWidgetView.swift */; };
+		A192574427F05861007FBB63 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B759327C51EB70039972A /* Station.swift */; };
 		A1ABAEC627CC8397004B4C92 /* LineTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABAEC527CC8397004B4C92 /* LineTabView.swift */; };
 		A1FA605427C8F13B00181AF3 /* NextStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA605327C8F13B00181AF3 /* NextStationView.swift */; };
 		A1FA605627C8FD2A00181AF3 /* PreviousStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA605527C8FD2A00181AF3 /* PreviousStationView.swift */; };
@@ -116,6 +127,8 @@
 		A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HankyuWidget.intentdefinition; sourceTree = "<group>"; };
 		A192571D27F0325D007FBB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A192571F27F0325D007FBB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A192573E27F0515C007FBB63 /* LineWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineWidgetView.swift; sourceTree = "<group>"; };
+		A192574127F051AC007FBB63 /* LineRowWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRowWidgetView.swift; sourceTree = "<group>"; };
 		A1ABAEC527CC8397004B4C92 /* LineTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTabView.swift; sourceTree = "<group>"; };
 		A1FA605327C8F13B00181AF3 /* NextStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStationView.swift; sourceTree = "<group>"; };
 		A1FA605527C8FD2A00181AF3 /* PreviousStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousStationView.swift; sourceTree = "<group>"; };
@@ -236,7 +249,6 @@
 			children = (
 				A17B759527C51F160039972A /* ModelData.swift */,
 				A179C46B27CE271300B23844 /* Spot.swift */,
-				A17B759327C51EB70039972A /* Station.swift */,
 				A17CB9B927C941DD008DCEDE /* Line.swift */,
 			);
 			path = Model;
@@ -256,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				A179C46627CE14ED00B23844 /* Spot */,
+				A17B759327C51EB70039972A /* Station.swift */,
 				A1886BC627CCD9ED00AEF59B /* Station */,
 				A1FEE7BE27C8E53D00EE4716 /* LikeButton.swift */,
 				A1ABAEC527CC8397004B4C92 /* LineTabView.swift */,
@@ -290,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				A192571A27F0325C007FBB63 /* HankyuWidget.swift */,
+				A192573E27F0515C007FBB63 /* LineWidgetView.swift */,
+				A192574127F051AC007FBB63 /* LineRowWidgetView.swift */,
 				A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */,
 				A192571D27F0325D007FBB63 /* Assets.xcassets */,
 				A192571F27F0325D007FBB63 /* Info.plist */,
@@ -452,6 +467,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A192571E27F0325D007FBB63 /* Assets.xcassets in Resources */,
+				A192573D27F04FAD007FBB63 /* Station_Kyoto.json in Resources */,
+				A192573B27F04FAD007FBB63 /* Station_Takarazuka.json in Resources */,
+				A192573C27F04FAD007FBB63 /* Station_Kobe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +498,8 @@
 				A169BE6027C5374D00FEF67D /* StationDetail.swift in Sources */,
 				A15E5D4C27C50DCA00D5DE61 /* HankyuApp.swift in Sources */,
 				A17B759627C51F160039972A /* ModelData.swift in Sources */,
+				A192573F27F0515C007FBB63 /* LineWidgetView.swift in Sources */,
+				A192574227F051AC007FBB63 /* LineRowWidgetView.swift in Sources */,
 				A179C46A27CE17F300B23844 /* SpotRow.swift in Sources */,
 				A1FA605627C8FD2A00181AF3 /* PreviousStationView.swift in Sources */,
 			);
@@ -507,7 +527,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A192572027F0325D007FBB63 /* HankyuWidget.intentdefinition in Sources */,
+				A192574327F051AC007FBB63 /* LineRowWidgetView.swift in Sources */,
+				A192574427F05861007FBB63 /* Station.swift in Sources */,
+				A192573727F04FA5007FBB63 /* Spot.swift in Sources */,
 				A192571B27F0325C007FBB63 /* HankyuWidget.swift in Sources */,
+				A192574027F0517F007FBB63 /* LineWidgetView.swift in Sources */,
+				A192573927F04FA5007FBB63 /* Line.swift in Sources */,
+				A192573A27F04FA5007FBB63 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +691,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,6 +722,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
