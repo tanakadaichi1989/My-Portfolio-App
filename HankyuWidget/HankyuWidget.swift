@@ -56,8 +56,8 @@ struct HankyuWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             HankyuWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Hankyu")
+        .description("This is Hankyu App widget.")
     }
 }
 
