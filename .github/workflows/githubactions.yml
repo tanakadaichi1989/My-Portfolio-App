@@ -1,8 +1,9 @@
 name: Slack Incoming Webhooks
 on:
   push:
-    branches: [ main ]
+    branches: [ develop ]
   pull_request:
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
