@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LineRowWidgetView: View {
     var line: Line
+    var stations: [Station]
 
     var body: some View {
         HStack {
@@ -19,13 +20,14 @@ struct LineRowWidgetView: View {
                 .fontWeight(.heavy)
             Image(systemName: "heart.fill")
                 .foregroundColor(.pink)
-            Text("0")
+            Text("\(stations.filter { $0.isFavorite == true }.count)")
+                .fontWeight(.heavy)
         }
     }
 }
 
 struct LineRowWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        LineRowWidgetView(line: Line.Takarazuka)
+        LineRowWidgetView(line: Line.Takarazuka, stations: [])
     }
 }

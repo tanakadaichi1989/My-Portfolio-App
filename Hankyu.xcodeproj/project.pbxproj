@@ -48,6 +48,7 @@
 		A192574227F051AC007FBB63 /* LineRowWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192574127F051AC007FBB63 /* LineRowWidgetView.swift */; };
 		A192574327F051AC007FBB63 /* LineRowWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192574127F051AC007FBB63 /* LineRowWidgetView.swift */; };
 		A192574427F05861007FBB63 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B759327C51EB70039972A /* Station.swift */; };
+		A192574A27F076BC007FBB63 /* Spot.json in Resources */ = {isa = PBXBuildFile; fileRef = A179C47127CE392C00B23844 /* Spot.json */; };
 		A1ABAEC627CC8397004B4C92 /* LineTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABAEC527CC8397004B4C92 /* LineTabView.swift */; };
 		A1FA605427C8F13B00181AF3 /* NextStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA605327C8F13B00181AF3 /* NextStationView.swift */; };
 		A1FA605627C8FD2A00181AF3 /* PreviousStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA605527C8FD2A00181AF3 /* PreviousStationView.swift */; };
@@ -129,6 +130,8 @@
 		A192571F27F0325D007FBB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A192573E27F0515C007FBB63 /* LineWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineWidgetView.swift; sourceTree = "<group>"; };
 		A192574127F051AC007FBB63 /* LineRowWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRowWidgetView.swift; sourceTree = "<group>"; };
+		A192574827F0715B007FBB63 /* Hankyu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hankyu.entitlements; sourceTree = "<group>"; };
+		A192574927F07165007FBB63 /* HankyuWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HankyuWidgetExtension.entitlements; sourceTree = "<group>"; };
 		A1ABAEC527CC8397004B4C92 /* LineTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTabView.swift; sourceTree = "<group>"; };
 		A1FA605327C8F13B00181AF3 /* NextStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStationView.swift; sourceTree = "<group>"; };
 		A1FA605527C8FD2A00181AF3 /* PreviousStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousStationView.swift; sourceTree = "<group>"; };
@@ -173,6 +176,7 @@
 		A15E5D3F27C50DCA00D5DE61 = {
 			isa = PBXGroup;
 			children = (
+				A192574927F07165007FBB63 /* HankyuWidgetExtension.entitlements */,
 				A15E5D4A27C50DCA00D5DE61 /* Hankyu */,
 				A15E5D5B27C50DCB00D5DE61 /* HankyuTests */,
 				A15E5D6527C50DCB00D5DE61 /* HankyuUITests */,
@@ -196,6 +200,7 @@
 		A15E5D4A27C50DCA00D5DE61 /* Hankyu */ = {
 			isa = PBXGroup;
 			children = (
+				A192574827F0715B007FBB63 /* Hankyu.entitlements */,
 				A15E5D4B27C50DCA00D5DE61 /* HankyuApp.swift */,
 				A15E5D4D27C50DCA00D5DE61 /* ContentView.swift */,
 				A1886BC227CCD8B700AEF59B /* Model */,
@@ -468,6 +473,7 @@
 			files = (
 				A192571E27F0325D007FBB63 /* Assets.xcassets in Resources */,
 				A192573D27F04FAD007FBB63 /* Station_Kyoto.json in Resources */,
+				A192574A27F076BC007FBB63 /* Spot.json in Resources */,
 				A192573B27F04FAD007FBB63 /* Station_Takarazuka.json in Resources */,
 				A192573C27F04FAD007FBB63 /* Station_Kobe.json in Resources */,
 			);
@@ -680,6 +686,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hankyu/Hankyu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hankyu/Preview Content\"";
@@ -711,6 +718,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hankyu/Hankyu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hankyu/Preview Content\"";
@@ -817,6 +825,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HankyuWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUH8WT596Y;
@@ -845,6 +854,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HankyuWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUH8WT596Y;

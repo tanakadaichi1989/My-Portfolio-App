@@ -10,23 +10,27 @@ import SwiftUI
 import Intents
 
 struct Provider: IntentTimelineProvider {
+    
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        let stations = ModelData().stations
+        return SimpleEntry(date: Date(), configuration: ConfigurationIntent(), stations: stations)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+        let stations = ModelData().stations
+        let entry = SimpleEntry(date: Date(), configuration: configuration, stations: stations)
         completion(entry)
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
+        let stations = ModelData().stations
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+            let entry = SimpleEntry(date: entryDate, configuration: configuration, stations: stations)
             entries.append(entry)
         }
 
@@ -38,13 +42,14 @@ struct Provider: IntentTimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationIntent
+    let stations: [Station]
 }
 
 struct HankyuWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        LineWidgetView()
+        LineWidgetView(stations: entry.stations)
             .padding()
     }
 }
@@ -64,8 +69,10 @@ struct HankyuWidget: Widget {
 }
 
 struct HankyuWidget_Previews: PreviewProvider {
+    @StateObject private var modelData = ModelData()
+    
     static var previews: some View {
-        HankyuWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        HankyuWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), stations: []))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

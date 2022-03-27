@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct LineWidgetView: View {
+    var stations: [Station]
     
     var body: some View {
         VStack {
             ForEach(Line.allCases,id: \.self){ line in
-                LineRowWidgetView(line: line)
+                LineRowWidgetView(line: line,stations: stations.filter { $0.line == line })
             }
         }
     }
@@ -20,6 +21,6 @@ struct LineWidgetView: View {
 
 struct LineWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        LineWidgetView()
+        LineWidgetView(stations: [])
     }
 }
