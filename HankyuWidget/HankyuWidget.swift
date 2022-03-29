@@ -10,27 +10,31 @@ import SwiftUI
 import Intents
 
 struct Provider: IntentTimelineProvider {
+    @EnvironmentObject var modelData: ModelData
     
     func placeholder(in context: Context) -> SimpleEntry {
-        let stations = ModelData().stations
-        return SimpleEntry(date: Date(), configuration: ConfigurationIntent(), stations: stations)
+        let date = Date()
+        let favoritedStations = modelData.stations.filter { $0.isFavorite == true }
+        return SimpleEntry(date: date,favoritedStations: favoritedStations)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let stations = ModelData().stations
-        let entry = SimpleEntry(date: Date(), configuration: configuration, stations: stations)
+        let date = Date()
+        let favoritedStations = ModelData().stations.filter { $0.isFavorite == true }
+        let entry = SimpleEntry(date: date,favoritedStations: favoritedStations)
         completion(entry)
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-        let stations = ModelData().stations
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
+        let favoritedStations = ModelData().stations.filter { $0.isFavorite == true }
+
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration, stations: stations)
+            let entry = SimpleEntry(date: entryDate,favoritedStations: favoritedStations)
             entries.append(entry)
         }
 
@@ -41,16 +45,32 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationIntent
-    let stations: [Station]
+    let favoritedStations: [Station]
 }
 
 struct HankyuWidgetEntryView : View {
     var entry: Provider.Entry
+    
+    private func getCountFavoritedStation(by line:Line) -> Int {
+        entry.favoritedStations.filter { $0.line == line && $0.isFavorite == true }.count
+    }
 
     var body: some View {
-        LineWidgetView(stations: entry.stations)
-            .padding()
+        VStack {
+            ForEach(Line.allCases,id:\.self){ line in
+                HStack {
+                    Rectangle()
+                        .foregroundColor(line.getLineColor())
+                        .frame(width: 10, height: 20)
+                    Text("\(line.getLineName())")
+                        .fontWeight(.bold)
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.pink)
+                    Text("\(getCountFavoritedStation(by: line))")
+                }
+            }
+            Text("\(entry.date)")
+        }
     }
 }
 
@@ -72,7 +92,7 @@ struct HankyuWidget_Previews: PreviewProvider {
     @StateObject private var modelData = ModelData()
     
     static var previews: some View {
-        HankyuWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), stations: []))
+        HankyuWidgetEntryView(entry: SimpleEntry(date: Date(),favoritedStations: ModelData().stations))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

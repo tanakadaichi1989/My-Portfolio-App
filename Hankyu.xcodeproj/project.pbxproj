@@ -43,10 +43,6 @@
 		A192573B27F04FAD007FBB63 /* Station_Takarazuka.json in Resources */ = {isa = PBXBuildFile; fileRef = A1886BBD27CCC61400AEF59B /* Station_Takarazuka.json */; };
 		A192573C27F04FAD007FBB63 /* Station_Kobe.json in Resources */ = {isa = PBXBuildFile; fileRef = A1886BBF27CCC61C00AEF59B /* Station_Kobe.json */; };
 		A192573D27F04FAD007FBB63 /* Station_Kyoto.json in Resources */ = {isa = PBXBuildFile; fileRef = A1886BBB27CCC60F00AEF59B /* Station_Kyoto.json */; };
-		A192573F27F0515C007FBB63 /* LineWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192573E27F0515C007FBB63 /* LineWidgetView.swift */; };
-		A192574027F0517F007FBB63 /* LineWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192573E27F0515C007FBB63 /* LineWidgetView.swift */; };
-		A192574227F051AC007FBB63 /* LineRowWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192574127F051AC007FBB63 /* LineRowWidgetView.swift */; };
-		A192574327F051AC007FBB63 /* LineRowWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A192574127F051AC007FBB63 /* LineRowWidgetView.swift */; };
 		A192574427F05861007FBB63 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B759327C51EB70039972A /* Station.swift */; };
 		A192574A27F076BC007FBB63 /* Spot.json in Resources */ = {isa = PBXBuildFile; fileRef = A179C47127CE392C00B23844 /* Spot.json */; };
 		A1ABAEC627CC8397004B4C92 /* LineTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABAEC527CC8397004B4C92 /* LineTabView.swift */; };
@@ -128,8 +124,6 @@
 		A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HankyuWidget.intentdefinition; sourceTree = "<group>"; };
 		A192571D27F0325D007FBB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A192571F27F0325D007FBB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A192573E27F0515C007FBB63 /* LineWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineWidgetView.swift; sourceTree = "<group>"; };
-		A192574127F051AC007FBB63 /* LineRowWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRowWidgetView.swift; sourceTree = "<group>"; };
 		A192574827F0715B007FBB63 /* Hankyu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hankyu.entitlements; sourceTree = "<group>"; };
 		A192574927F07165007FBB63 /* HankyuWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HankyuWidgetExtension.entitlements; sourceTree = "<group>"; };
 		A1ABAEC527CC8397004B4C92 /* LineTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTabView.swift; sourceTree = "<group>"; };
@@ -308,8 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				A192571A27F0325C007FBB63 /* HankyuWidget.swift */,
-				A192573E27F0515C007FBB63 /* LineWidgetView.swift */,
-				A192574127F051AC007FBB63 /* LineRowWidgetView.swift */,
 				A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */,
 				A192571D27F0325D007FBB63 /* Assets.xcassets */,
 				A192571F27F0325D007FBB63 /* Info.plist */,
@@ -504,8 +496,6 @@
 				A169BE6027C5374D00FEF67D /* StationDetail.swift in Sources */,
 				A15E5D4C27C50DCA00D5DE61 /* HankyuApp.swift in Sources */,
 				A17B759627C51F160039972A /* ModelData.swift in Sources */,
-				A192573F27F0515C007FBB63 /* LineWidgetView.swift in Sources */,
-				A192574227F051AC007FBB63 /* LineRowWidgetView.swift in Sources */,
 				A179C46A27CE17F300B23844 /* SpotRow.swift in Sources */,
 				A1FA605627C8FD2A00181AF3 /* PreviousStationView.swift in Sources */,
 			);
@@ -533,11 +523,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A192572027F0325D007FBB63 /* HankyuWidget.intentdefinition in Sources */,
-				A192574327F051AC007FBB63 /* LineRowWidgetView.swift in Sources */,
 				A192574427F05861007FBB63 /* Station.swift in Sources */,
 				A192573727F04FA5007FBB63 /* Spot.swift in Sources */,
 				A192571B27F0325C007FBB63 /* HankyuWidget.swift in Sources */,
-				A192574027F0517F007FBB63 /* LineWidgetView.swift in Sources */,
 				A192573927F04FA5007FBB63 /* Line.swift in Sources */,
 				A192573A27F04FA5007FBB63 /* ModelData.swift in Sources */,
 			);
