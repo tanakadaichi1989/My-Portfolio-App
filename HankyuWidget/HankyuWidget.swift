@@ -13,15 +13,13 @@ struct Provider: IntentTimelineProvider {
     @EnvironmentObject var modelData: ModelData
     
     func placeholder(in context: Context) -> SimpleEntry {
-        let date = Date()
         let favoritedStations = modelData.stations.filter { $0.isFavorite == true }
-        return SimpleEntry(date: date,favoritedStations: favoritedStations)
+        return SimpleEntry(date: Date(),favoritedStations: favoritedStations)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let date = Date()
-        let favoritedStations = ModelData().stations.filter { $0.isFavorite == true }
-        let entry = SimpleEntry(date: date,favoritedStations: favoritedStations)
+        let favoritedStations = modelData.stations.filter { $0.isFavorite == true }
+        let entry = SimpleEntry(date: Date(),favoritedStations: favoritedStations)
         completion(entry)
     }
 
@@ -69,7 +67,6 @@ struct HankyuWidgetEntryView : View {
                     Text("\(getCountFavoritedStation(by: line))")
                 }
             }
-            Text("\(entry.date)")
         }
     }
 }
