@@ -16,6 +16,11 @@ final class ModelData: ObservableObject {
         guard let station = stations.first(where: { $0.id == stationID }) else { return nil }
         return station
     }
+    
+    func countLikeStation(by line:Line) -> Int {
+        stations.filter { $0.line == line }.count
+    }
+    
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

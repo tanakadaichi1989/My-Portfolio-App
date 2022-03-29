@@ -27,7 +27,7 @@ struct SpotView: View {
                         }
                     }
                 }
-                .navigationTitle("おでかけスポット（GitHub Actions の確認）")
+                .navigationTitle("おでかけスポット")
             }
             .navigationViewStyle(.stack)
         }
