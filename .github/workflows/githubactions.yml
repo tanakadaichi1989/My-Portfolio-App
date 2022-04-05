@@ -10,9 +10,6 @@ jobs:
     steps:
       # Check out theis repo
       - uses: actions/checkout@v2
-      
-      - name: execute Text
-        run: xcodebuild -project Hankyu.xcodeproj -scheme Hankyu -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.4' test
 
       # Start a Slack workflow using a webhook trigger
       # https://github.com/slackapi/slack-github-action
