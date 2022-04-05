@@ -13,7 +13,7 @@ jobs:
       
       # Execute Test
       - name: Execute Test defined on Xcode
-      run xcodebuild -project Hankyu.xcodeproj -scheme Hankyu -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.4' test
+      run: xcodebuild -project Hankyu.xcodeproj -scheme Hankyu -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.4' test
 
       # Start a Slack workflow using a webhook trigger
       # https://github.com/slackapi/slack-github-action
