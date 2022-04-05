@@ -13,7 +13,17 @@ jobs:
       
       # Execute Test
       - name: Execute Test defined on Xcode
-        run: xcodebuild -project Hankyu.xcodeproj -scheme Hankyu -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.4' test
+    
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1 # ソースコードをcheckout
+    - name: Select Xcode version # Xcode 12.4 を使う
+      run: sudo xcode-select -s '/Applications/Xcode_12.4.app/Contents/Developer'
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Build # シミュレーター向けにビルド
+      run: xcodebuild -sdk iphonesimulator -configuration Debug build 
 
       # Start a Slack workflow using a webhook trigger
       # https://github.com/slackapi/slack-github-action
