@@ -13,8 +13,6 @@ jobs:
       
       # Execute Test
       - name: Execute Test defined on Xcode
-    
-    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v1 # ソースコードをcheckout
