@@ -29,6 +29,8 @@ class HankyuUITests: XCTestCase {
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let navBar = XCUIApplication().staticTexts.matching(identifier: "おでかけスポット").firstMatch
+        XCTAssertEqual(navBar.label, "おでかけスポット")
     }
 
     func testLaunchPerformance() throws {
