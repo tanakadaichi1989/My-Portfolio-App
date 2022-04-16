@@ -2,47 +2,47 @@
     {
         "id": "spot01",
         "name": "宝塚駅",
-        "imageURL": null,
+        "imageURL": "Takarazuka_Station",
         "line": "Takarazuka",
-        "nearStationID": "takarazuka10",
+        "nearStationID": "takarazuka56",
         "isFeatured": false
     },
     {
         "id": "spot02",
         "name": "中山寺",
-        "imageURL": null,
+        "imageURL": "Nakayamadera",
         "line": "Takarazuka",
-        "nearStationID": "takarazuka10",
+        "nearStationID": "takarazuka53",
         "isFeatured": false
     },
     {
         "id": "spot03",
         "name": "夙川河川敷",
-        "imageURL": null,
+        "imageURL": "Shukugawa",
         "line": "Kobe",
-        "nearStationID": "kobe14",
+        "nearStationID": "kobe09",
         "isFeatured": true
     },
     {
         "id": "spot04",
         "name": "廣田神社",
-        "imageURL": null,
+        "imageURL": "Hirota_Shrine",
         "line": "Kobe",
-        "nearStationID": "kobe14",
+        "nearStationID": "kobe08",
         "isFeatured": false
     },
     {
         "id": "spot05",
         "name": "南京町",
-        "imageURL": null,
+        "imageURL": "China_Town",
         "line": "Kobe",
-        "nearStationID": "kobe14",
+        "nearStationID": "kobe16",
         "isFeatured": false
     },
     {
         "id": "spot06",
-        "name": "蹴上",
-        "imageURL": null,
+        "name": "蹴上インクライン",
+        "imageURL": "Keage_Incline",
         "line": "Kyoto",
         "nearStationID": "kyoto85",
         "isFeatured": false
@@ -50,9 +50,17 @@
     {
         "id": "spot07",
         "name": "南禅寺",
-        "imageURL": null,
+        "imageURL": "Nanzenji",
         "line": "Kyoto",
         "nearStationID": "kyoto85",
+        "isFeatured": false
+    },
+    {
+        "id": "spot08",
+        "name": "二条城",
+        "imageURL": "Nijo_Castle",
+        "line": "Kyoto",
+        "nearStationID": "kyoto83",
         "isFeatured": false
     }
 ]
