@@ -11,13 +11,20 @@ struct FeaturedSpotView: View {
     var spot: Spot
     var body: some View {
         VStack {
-            ZStack {
-            Rectangle()
-                .frame(height: 200)
-                .foregroundColor(.gray)
-            Text("特集 - 沿線のお花見スポット")
-                    .fontWeight(.black)
-                    .foregroundColor(.white)
+            ZStack(alignment: .bottom) {
+                Image("Shukugawa")
+                    .resizable()
+                    .scaledToFill()
+                    .clipped()
+                    .frame(height: 200)
+                LinearGradient(gradient: Gradient(colors: [.black.opacity(0), .black.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+                    .frame(height: 30)
+                VStack(alignment: .leading) {
+                    Text("特集 - 沿線のお花見スポット")
+                        .fontWeight(.black)
+                        .foregroundColor(.white)
+                        .padding(5)
+                }
             }
         }
     }

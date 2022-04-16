@@ -12,10 +12,15 @@ struct SpotItem: View {
     var spot: Spot
     var body: some View {
         VStack(alignment: .leading) {
-            Image(systemName: "photo")
+            Image(spot.imageURL ?? "photo")
                 .resizable()
-                .frame(width: 150, height: 150)
+                .clipped()
+                .scaledToFill()
+                .frame(width: 120, height: 120)
+                .cornerRadius(5)
+                .padding(5)
             Text(spot.name)
+                .padding(5)
         }
     }
 }
