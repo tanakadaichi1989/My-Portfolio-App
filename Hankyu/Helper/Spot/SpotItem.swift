@@ -21,7 +21,7 @@ struct SpotItem: View {
                 .cornerRadius(5)
                 .padding(5)
             Text(spot.name)
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
                 .padding(5)
         }
     } 
