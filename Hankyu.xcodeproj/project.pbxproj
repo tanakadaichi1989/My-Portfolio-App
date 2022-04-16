@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A11DAAB427C5C3F700B8710C /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DAAB327C5C3F700B8710C /* StationListView.swift */; };
+		A15C526C280A799D00204FD4 /* FeaturedSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C526B280A799D00204FD4 /* FeaturedSpotView.swift */; };
+		A15C526E280A815500204FD4 /* SpotItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C526D280A815500204FD4 /* SpotItem.swift */; };
 		A15E5D4C27C50DCA00D5DE61 /* HankyuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E5D4B27C50DCA00D5DE61 /* HankyuApp.swift */; };
 		A15E5D4E27C50DCA00D5DE61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E5D4D27C50DCA00D5DE61 /* ContentView.swift */; };
 		A15E5D5027C50DCB00D5DE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15E5D4F27C50DCB00D5DE61 /* Assets.xcassets */; };
@@ -92,6 +94,8 @@
 
 /* Begin PBXFileReference section */
 		A11DAAB327C5C3F700B8710C /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
+		A15C526B280A799D00204FD4 /* FeaturedSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedSpotView.swift; sourceTree = "<group>"; };
+		A15C526D280A815500204FD4 /* SpotItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotItem.swift; sourceTree = "<group>"; };
 		A15E5D4827C50DCA00D5DE61 /* Hankyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hankyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E5D4B27C50DCA00D5DE61 /* HankyuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankyuApp.swift; sourceTree = "<group>"; };
 		A15E5D4D27C50DCA00D5DE61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -238,7 +242,9 @@
 		A179C46627CE14ED00B23844 /* Spot */ = {
 			isa = PBXGroup;
 			children = (
+				A179C46427CD904600B23844 /* SpotView.swift */,
 				A179C46927CE17F300B23844 /* SpotRow.swift */,
+				A15C526D280A815500204FD4 /* SpotItem.swift */,
 			);
 			path = Spot;
 			sourceTree = "<group>";
@@ -257,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				A11DAAB327C5C3F700B8710C /* StationListView.swift */,
-				A179C46427CD904600B23844 /* SpotView.swift */,
+				A15C526B280A799D00204FD4 /* FeaturedSpotView.swift */,
 				A169BE5F27C5374D00FEF67D /* StationDetail.swift */,
 			);
 			path = View;
@@ -480,6 +486,8 @@
 			files = (
 				A1FA605427C8F13B00181AF3 /* NextStationView.swift in Sources */,
 				A15E5D7627C50DE100D5DE61 /* StationNumberView.swift in Sources */,
+				A15C526E280A815500204FD4 /* SpotItem.swift in Sources */,
+				A15C526C280A799D00204FD4 /* FeaturedSpotView.swift in Sources */,
 				A17B758527C515A50039972A /* StationNameView.swift in Sources */,
 				A1FA605827C8FF3E00181AF3 /* NeighborStationView.swift in Sources */,
 				A17B758327C513E10039972A /* MapView.swift in Sources */,

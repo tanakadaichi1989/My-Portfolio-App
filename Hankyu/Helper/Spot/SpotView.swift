@@ -12,24 +12,26 @@ import SwiftUI
 // Spot
 struct SpotView: View {
     @EnvironmentObject var  modelData: ModelData
-
-   // テストコードを書く
     
+    var featuredSpot: Spot {
+        modelData.features[0]
+    }
+
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
-                VStack {
-                    Text("特集")
+                List {
+                    FeaturedSpotView(spot: featuredSpot)
+                        .scaledToFill()
+                        .clipped()
+                        .listRowInsets(EdgeInsets())
                     ForEach(Line.allCases,id: \.self){ line in
-                        VStack {
-                            Text("\(line.getLineName()) おすすめ")
-                            SpotRow(spot: modelData.spots[0])
-                        }
+                        SpotRow(line: line,spots: modelData.spotsByLine[line]!)
                     }
+                    .listRowInsets(EdgeInsets())
                 }
                 .navigationTitle("おでかけスポット")
             }
-            .navigationViewStyle(.stack)
         }
     }
 }
