@@ -9,21 +9,38 @@ import SwiftUI
 
 struct SpotRow: View {
     @EnvironmentObject private var modelData: ModelData
-    var spot: Spot
+    var line: Line
+    var spots: [Spot]
+    
     var body: some View {
-        VStack {
-            Text(spot.name)
-            Text(spot.imageURL ?? "画像なし")
-            Text(modelData.getStation(from: spot.nearStationID)?.name ?? "")
+        VStack(alignment: .leading){
+            HStack {
+                Rectangle()
+                    .frame(width: 5, height: 50)
+                    .foregroundColor(line.getLineColor())
+                Text(line.getLineName())
+                    .fontWeight(.heavy)
+                StationNumberView(station: modelData.stations.filter { $0.line == line }.first!)
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.gray)
+                StationNumberView(station: modelData.stations.filter { $0.line == line }.last!)
+            }
+            ScrollView(.horizontal,showsIndicators: false) {
+                HStack {
+                    ForEach(spots,id:\.self){ spot in
+                        SpotItem(spot: spot)
+                    }
+                }
+            }
         }
-        .frame(width: 200, height: 100)
-        .cornerRadius(5)
+        .padding()
     }
 }
 
 
 struct SpotRow_Previews: PreviewProvider {
+    static var spots = ModelData().spotsByLine
     static var previews: some View {
-        SpotRow(spot: ModelData().spots[0])
+        SpotRow(line: .Kobe, spots: spots[.Kobe]!)
     }
 }

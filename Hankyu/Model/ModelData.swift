@@ -12,6 +12,17 @@ final class ModelData: ObservableObject {
     @Published var stations: [Station] = load("Station_Takarazuka.json") + load("Station_Kobe.json") + load("Station_Kyoto.json")
     @Published var spots: [Spot] = load("Spot.json")
     
+    var features: [Spot] {
+        spots.filter { $0.isFeatured }
+    }
+    
+    var spotsByLine: [Line:[Spot]] {
+        Dictionary(
+            grouping: spots,
+            by: { $0.line }
+        )
+    }
+    
     func getStation(from stationID: String) -> Station? {
         guard let station = stations.first(where: { $0.id == stationID }) else { return nil }
         return station

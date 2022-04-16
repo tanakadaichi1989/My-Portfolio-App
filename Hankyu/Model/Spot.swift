@@ -11,6 +11,8 @@ struct Spot: Hashable, Decodable, Identifiable {
     var id: String
     var name: String
     var imageURL: String?
+    var line: Line
     var nearStationID: String
+    var isFeatured: Bool
 }
 
