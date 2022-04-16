@@ -37,7 +37,9 @@ struct SpotView: View {
 }
 
 struct SpotView_Previews: PreviewProvider {
+    static var modelView = ModelData()
     static var previews: some View {
         SpotView()
+            .environmentObject(ModelData())
     }
 }

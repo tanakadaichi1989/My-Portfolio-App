@@ -11,6 +11,7 @@ struct SpotItem: View {
     @EnvironmentObject var modelData: ModelData
     var spot: Spot
     var body: some View {
+        
         VStack(alignment: .leading) {
             Image(spot.imageURL ?? "photo")
                 .resizable()
@@ -20,9 +21,10 @@ struct SpotItem: View {
                 .cornerRadius(5)
                 .padding(5)
             Text(spot.name)
+                .foregroundColor(.black)
                 .padding(5)
         }
-    }
+    } 
 }
 
 struct SpotItem_Previews: PreviewProvider {
