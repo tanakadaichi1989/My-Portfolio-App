@@ -12,7 +12,7 @@ struct SpotItem: View {
     var spot: Spot
     var body: some View {
         
-        VStack(alignment: .leading) {
+        VStack(alignment: .center) {
             Image(spot.imageURL ?? "photo")
                 .resizable()
                 .clipped()
