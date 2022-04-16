@@ -28,7 +28,11 @@ struct SpotRow: View {
             ScrollView(.horizontal,showsIndicators: false) {
                 HStack {
                     ForEach(spots,id:\.self){ spot in
-                        SpotItem(spot: spot)
+                        NavigationLink(destination: {
+                            SpotDetail(spot: spot)
+                        }, label: {
+                            SpotItem(spot: spot)
+                        })
                     }
                 }
             }
@@ -42,5 +46,6 @@ struct SpotRow_Previews: PreviewProvider {
     static var spots = ModelData().spotsByLine
     static var previews: some View {
         SpotRow(line: .Kobe, spots: spots[.Kobe]!)
+            .environmentObject(ModelData())
     }
 }

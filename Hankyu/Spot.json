@@ -5,6 +5,11 @@
         "imageURL": "Takarazuka_Station",
         "line": "Takarazuka",
         "nearStationID": "takarazuka56",
+        "description": "駅前から宝塚大劇場に続く「花のみち」は、桜のシーズンになると多くの花見客が訪れる。",
+        "subinformation": "すぐ",
+        "latitude": "34.81000",
+        "longitude": "135.33923",
+        "isFavorite": false,
         "isFeatured": false
     },
     {
@@ -13,6 +18,11 @@
         "imageURL": "Nakayamadera",
         "line": "Takarazuka",
         "nearStationID": "takarazuka53",
+        "description": "聖徳太子が建立したとされる日本最初の観音霊場。\n安産祈願の霊場として、代々皇室や庶民に至るまで篤く信仰されている。",
+        "subinformation": "から徒歩",
+        "latitude": "34.8293",
+        "longitude": "135.34037",
+        "isFavorite": true,
         "isFeatured": false
     },
     {
@@ -21,6 +31,11 @@
         "imageURL": "Shukugawa",
         "line": "Kobe",
         "nearStationID": "kobe09",
+        "description": "ソメイヨシノ・ヤマザクラ・オオシマザクラなど約1,700本が植えられている。\n日本さくら名所100選にも選ばれている。",
+        "subinformation": "すぐ",
+        "latitude": "34.74356",
+        "longitude": "135.32855",
+        "isFavorite": true,
         "isFeatured": true
     },
     {
@@ -29,6 +44,11 @@
         "imageURL": "Hirota_Shrine",
         "line": "Kobe",
         "nearStationID": "kobe08",
+        "description": "「日本書紀」にも書かれている由緒ある神社。\n境内に自生するつつじは兵庫県の天然記念物に指定されている。",
+        "subinformation": "から阪急バス「廣田神社前」下車",
+        "latitude": "34.75272",
+        "longitude": "135.33791",
+        "isFavorite": false,
         "isFeatured": false
     },
     {
@@ -37,6 +57,11 @@
         "imageURL": "China_Town",
         "line": "Kobe",
         "nearStationID": "kobe16",
+        "description": "旧居留地の西隣に位置する。",
+        "subinformation": "から徒歩10分",
+        "latitude": "34.68813",
+        "longitude": "135.1861",
+        "isFavorite": false,
         "isFeatured": false
     },
     {
@@ -45,6 +70,11 @@
         "imageURL": "Keage_Incline",
         "line": "Kyoto",
         "nearStationID": "kyoto85",
+        "description": "南禅寺の近くにあり、船を運航するために設置した傾斜鉄道の跡地。",
+        "subinformation": "から地下鉄乗換・地下鉄「蹴上」下車",
+        "latitude": "35.01053",
+        "longitude": "135.78662",
+        "isFavorite": true,
         "isFeatured": false
     },
     {
@@ -53,6 +83,11 @@
         "imageURL": "Nanzenji",
         "line": "Kyoto",
         "nearStationID": "kyoto85",
+        "description": "境内には琵琶湖の水を京都へ引く「水路閣」がある。",
+        "subinformation": "から地下鉄乗換・地下鉄「蹴上」下車",
+        "latitude": "35.01141",
+        "longitude": "135.79229",
+        "isFavorite": false,
         "isFeatured": false
     },
     {
@@ -61,6 +96,11 @@
         "imageURL": "Nijo_Castle",
         "line": "Kyoto",
         "nearStationID": "kyoto83",
+        "description": "徳川慶喜が大政奉還を行ったスポット",
+        "subinformation": "から地下鉄乗換・地下鉄「二条城前」下車",
+        "latitude": "35.01382",
+        "longitude": "135.74643",
+        "isFavorite": false,
         "isFeatured": false
     }
 ]
