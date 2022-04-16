@@ -17,13 +17,14 @@ struct FeaturedSpotView: View {
                     .scaledToFill()
                     .clipped()
                     .frame(height: 200)
-                LinearGradient(gradient: Gradient(colors: [.black.opacity(0), .black.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
-                    .frame(height: 30)
+                LinearGradient(gradient: Gradient(colors: [.black.opacity(0), .black.opacity(0.9)]), startPoint: .top, endPoint: .bottom)
+                    .frame(height: 60)
                 VStack(alignment: .leading) {
-                    Text("特集 - 沿線のお花見スポット")
+                    Text("特集 沿線のお花見スポット")
+                        .font(.title2)
                         .fontWeight(.black)
                         .foregroundColor(.white)
-                        .padding(5)
+                        .padding(10)
                 }
             }
         }
