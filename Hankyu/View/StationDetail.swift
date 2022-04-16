@@ -45,7 +45,6 @@ struct StationDetail: View {
                     } label: {
                         SpotItem(spot: modelData.spots[unwrappedSpotIndex])
                     }
-                    Text("この駅\(modelData.spots[unwrappedSpotIndex].subinformation)")
                 }
             }
             
