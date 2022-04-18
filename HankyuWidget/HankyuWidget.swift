@@ -73,14 +73,14 @@ struct HankyuWidgetEntryView : View {
 
 @main
 struct HankyuWidget: Widget {
-    let kind: String = "HankyuWidget"
+    let kind: String = "MyPortfolioWidget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             HankyuWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Hankyu")
-        .description("This is Hankyu App widget.")
+        .configurationDisplayName("My Portfolio")
+        .description("This is My Portfolio App widget.")
         .supportedFamilies([.systemSmall])
     }
 }

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A15E5D4727C50DCA00D5DE61"
-               BuildableName = "Hankyu.app"
+               BuildableName = "My Portfolio.app"
                BlueprintName = "MyPortfolio"
                ReferencedContainer = "container:MyPortfolio.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A15E5D5727C50DCB00D5DE61"
-               BuildableName = "HankyuTests.xctest"
+               BuildableName = "MyPortfolioTests.xctest"
                BlueprintName = "MyPortfolioTests"
                ReferencedContainer = "container:MyPortfolio.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A15E5D6127C50DCB00D5DE61"
-               BuildableName = "HankyuUITests.xctest"
+               BuildableName = "MyPortfolioUITests.xctest"
                BlueprintName = "MyPortfolioUITests"
                ReferencedContainer = "container:MyPortfolio.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A15E5D4727C50DCA00D5DE61"
-            BuildableName = "Hankyu.app"
+            BuildableName = "My Portfolio.app"
             BlueprintName = "MyPortfolio"
             ReferencedContainer = "container:MyPortfolio.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A15E5D4727C50DCA00D5DE61"
-            BuildableName = "Hankyu.app"
+            BuildableName = "My Portfolio.app"
             BlueprintName = "MyPortfolio"
             ReferencedContainer = "container:MyPortfolio.xcodeproj">
          </BuildableReference>
