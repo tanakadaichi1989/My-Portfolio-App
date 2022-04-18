@@ -39,7 +39,7 @@
 		A192571E27F0325D007FBB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A192571D27F0325D007FBB63 /* Assets.xcassets */; };
 		A192572027F0325D007FBB63 /* HankyuWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */; };
 		A192572127F0325D007FBB63 /* HankyuWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A192571C27F0325C007FBB63 /* HankyuWidget.intentdefinition */; };
-		A192572427F0325D007FBB63 /* HankyuWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A192571327F0325C007FBB63 /* HankyuWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A192572427F0325D007FBB63 /* MyPortfolioWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A192571327F0325C007FBB63 /* MyPortfolioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A192573727F04FA5007FBB63 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179C46B27CE271300B23844 /* Spot.swift */; };
 		A192573927F04FA5007FBB63 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CB9B927C941DD008DCEDE /* Line.swift */; };
 		A192573A27F04FA5007FBB63 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B759527C51F160039972A /* ModelData.swift */; };
@@ -86,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A192572427F0325D007FBB63 /* HankyuWidgetExtension.appex in Embed App Extensions */,
+				A192572427F0325D007FBB63 /* MyPortfolioWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,14 +97,14 @@
 		A11DAAB327C5C3F700B8710C /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
 		A15C526B280A799D00204FD4 /* FeaturedSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedSpotView.swift; sourceTree = "<group>"; };
 		A15C526D280A815500204FD4 /* SpotItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotItem.swift; sourceTree = "<group>"; };
-		A15E5D4827C50DCA00D5DE61 /* Hankyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hankyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15E5D4827C50DCA00D5DE61 /* My Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E5D4B27C50DCA00D5DE61 /* HankyuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankyuApp.swift; sourceTree = "<group>"; };
 		A15E5D4D27C50DCA00D5DE61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A15E5D4F27C50DCB00D5DE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15E5D5227C50DCB00D5DE61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A15E5D5827C50DCB00D5DE61 /* HankyuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HankyuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15E5D5827C50DCB00D5DE61 /* MyPortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E5D5C27C50DCB00D5DE61 /* HankyuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankyuTests.swift; sourceTree = "<group>"; };
-		A15E5D6227C50DCB00D5DE61 /* HankyuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HankyuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15E5D6227C50DCB00D5DE61 /* MyPortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPortfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E5D6627C50DCB00D5DE61 /* HankyuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankyuUITests.swift; sourceTree = "<group>"; };
 		A15E5D6827C50DCB00D5DE61 /* HankyuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankyuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A15E5D7527C50DE100D5DE61 /* StationNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationNumberView.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		A1886BBB27CCC60F00AEF59B /* Station_Kyoto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Station_Kyoto.json; sourceTree = "<group>"; };
 		A1886BBD27CCC61400AEF59B /* Station_Takarazuka.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Station_Takarazuka.json; sourceTree = "<group>"; };
 		A1886BBF27CCC61C00AEF59B /* Station_Kobe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Station_Kobe.json; sourceTree = "<group>"; };
-		A192571327F0325C007FBB63 /* HankyuWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HankyuWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A192571327F0325C007FBB63 /* MyPortfolioWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyPortfolioWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A192571527F0325C007FBB63 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A192571727F0325C007FBB63 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A192571A27F0325C007FBB63 /* HankyuWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankyuWidget.swift; sourceTree = "<group>"; };
@@ -189,10 +189,10 @@
 		A15E5D4927C50DCA00D5DE61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A15E5D4827C50DCA00D5DE61 /* Hankyu.app */,
-				A15E5D5827C50DCB00D5DE61 /* HankyuTests.xctest */,
-				A15E5D6227C50DCB00D5DE61 /* HankyuUITests.xctest */,
-				A192571327F0325C007FBB63 /* HankyuWidgetExtension.appex */,
+				A15E5D4827C50DCA00D5DE61 /* My Portfolio.app */,
+				A15E5D5827C50DCB00D5DE61 /* MyPortfolioTests.xctest */,
+				A15E5D6227C50DCB00D5DE61 /* MyPortfolioUITests.xctest */,
+				A192571327F0325C007FBB63 /* MyPortfolioWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,9 +321,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A15E5D4727C50DCA00D5DE61 /* Hankyu */ = {
+		A15E5D4727C50DCA00D5DE61 /* MyPortfolio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A15E5D6C27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "Hankyu" */;
+			buildConfigurationList = A15E5D6C27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "MyPortfolio" */;
 			buildPhases = (
 				A15E5D4427C50DCA00D5DE61 /* Sources */,
 				A15E5D4527C50DCA00D5DE61 /* Frameworks */,
@@ -335,14 +335,14 @@
 			dependencies = (
 				A192572327F0325D007FBB63 /* PBXTargetDependency */,
 			);
-			name = Hankyu;
+			name = MyPortfolio;
 			productName = Hankyu;
-			productReference = A15E5D4827C50DCA00D5DE61 /* Hankyu.app */;
+			productReference = A15E5D4827C50DCA00D5DE61 /* My Portfolio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A15E5D5727C50DCB00D5DE61 /* HankyuTests */ = {
+		A15E5D5727C50DCB00D5DE61 /* MyPortfolioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A15E5D6F27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "HankyuTests" */;
+			buildConfigurationList = A15E5D6F27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "MyPortfolioTests" */;
 			buildPhases = (
 				A15E5D5427C50DCB00D5DE61 /* Sources */,
 				A15E5D5527C50DCB00D5DE61 /* Frameworks */,
@@ -353,14 +353,14 @@
 			dependencies = (
 				A15E5D5A27C50DCB00D5DE61 /* PBXTargetDependency */,
 			);
-			name = HankyuTests;
+			name = MyPortfolioTests;
 			productName = HankyuTests;
-			productReference = A15E5D5827C50DCB00D5DE61 /* HankyuTests.xctest */;
+			productReference = A15E5D5827C50DCB00D5DE61 /* MyPortfolioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A15E5D6127C50DCB00D5DE61 /* HankyuUITests */ = {
+		A15E5D6127C50DCB00D5DE61 /* MyPortfolioUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A15E5D7227C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "HankyuUITests" */;
+			buildConfigurationList = A15E5D7227C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "MyPortfolioUITests" */;
 			buildPhases = (
 				A15E5D5E27C50DCB00D5DE61 /* Sources */,
 				A15E5D5F27C50DCB00D5DE61 /* Frameworks */,
@@ -371,14 +371,14 @@
 			dependencies = (
 				A15E5D6427C50DCB00D5DE61 /* PBXTargetDependency */,
 			);
-			name = HankyuUITests;
+			name = MyPortfolioUITests;
 			productName = HankyuUITests;
-			productReference = A15E5D6227C50DCB00D5DE61 /* HankyuUITests.xctest */;
+			productReference = A15E5D6227C50DCB00D5DE61 /* MyPortfolioUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		A192571227F0325C007FBB63 /* HankyuWidgetExtension */ = {
+		A192571227F0325C007FBB63 /* MyPortfolioWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A192572827F0325D007FBB63 /* Build configuration list for PBXNativeTarget "HankyuWidgetExtension" */;
+			buildConfigurationList = A192572827F0325D007FBB63 /* Build configuration list for PBXNativeTarget "MyPortfolioWidgetExtension" */;
 			buildPhases = (
 				A192570F27F0325C007FBB63 /* Sources */,
 				A192571027F0325C007FBB63 /* Frameworks */,
@@ -388,9 +388,9 @@
 			);
 			dependencies = (
 			);
-			name = HankyuWidgetExtension;
+			name = MyPortfolioWidgetExtension;
 			productName = HankyuWidgetExtension;
-			productReference = A192571327F0325C007FBB63 /* HankyuWidgetExtension.appex */;
+			productReference = A192571327F0325C007FBB63 /* MyPortfolioWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -419,7 +419,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A15E5D4327C50DCA00D5DE61 /* Build configuration list for PBXProject "Hankyu" */;
+			buildConfigurationList = A15E5D4327C50DCA00D5DE61 /* Build configuration list for PBXProject "MyPortfolio" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -432,10 +432,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A15E5D4727C50DCA00D5DE61 /* Hankyu */,
-				A15E5D5727C50DCB00D5DE61 /* HankyuTests */,
-				A15E5D6127C50DCB00D5DE61 /* HankyuUITests */,
-				A192571227F0325C007FBB63 /* HankyuWidgetExtension */,
+				A15E5D4727C50DCA00D5DE61 /* MyPortfolio */,
+				A15E5D5727C50DCB00D5DE61 /* MyPortfolioTests */,
+				A15E5D6127C50DCB00D5DE61 /* MyPortfolioUITests */,
+				A192571227F0325C007FBB63 /* MyPortfolioWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -548,17 +548,17 @@
 /* Begin PBXTargetDependency section */
 		A15E5D5A27C50DCB00D5DE61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A15E5D4727C50DCA00D5DE61 /* Hankyu */;
+			target = A15E5D4727C50DCA00D5DE61 /* MyPortfolio */;
 			targetProxy = A15E5D5927C50DCB00D5DE61 /* PBXContainerItemProxy */;
 		};
 		A15E5D6427C50DCB00D5DE61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A15E5D4727C50DCA00D5DE61 /* Hankyu */;
+			target = A15E5D4727C50DCA00D5DE61 /* MyPortfolio */;
 			targetProxy = A15E5D6327C50DCB00D5DE61 /* PBXContainerItemProxy */;
 		};
 		A192572327F0325D007FBB63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A192571227F0325C007FBB63 /* HankyuWidgetExtension */;
+			target = A192571227F0325C007FBB63 /* MyPortfolioWidgetExtension */;
 			targetProxy = A192572227F0325D007FBB63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -705,7 +705,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Sample.2022.Hankyu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Portfolio";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -737,7 +737,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Sample.2022.Hankyu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Portfolio";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -760,7 +760,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hankyu.app/Hankyu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPortfolio.app/MyPortfolio";
 			};
 			name = Debug;
 		};
@@ -780,7 +780,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hankyu.app/Hankyu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPortfolio.app/MyPortfolio";
 			};
 			name = Release;
 		};
@@ -881,7 +881,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A15E5D4327C50DCA00D5DE61 /* Build configuration list for PBXProject "Hankyu" */ = {
+		A15E5D4327C50DCA00D5DE61 /* Build configuration list for PBXProject "MyPortfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A15E5D6A27C50DCB00D5DE61 /* Debug */,
@@ -890,7 +890,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A15E5D6C27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "Hankyu" */ = {
+		A15E5D6C27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "MyPortfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A15E5D6D27C50DCB00D5DE61 /* Debug */,
@@ -899,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A15E5D6F27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "HankyuTests" */ = {
+		A15E5D6F27C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "MyPortfolioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A15E5D7027C50DCB00D5DE61 /* Debug */,
@@ -908,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A15E5D7227C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "HankyuUITests" */ = {
+		A15E5D7227C50DCB00D5DE61 /* Build configuration list for PBXNativeTarget "MyPortfolioUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A15E5D7327C50DCB00D5DE61 /* Debug */,
@@ -917,7 +917,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A192572827F0325D007FBB63 /* Build configuration list for PBXNativeTarget "HankyuWidgetExtension" */ = {
+		A192572827F0325D007FBB63 /* Build configuration list for PBXNativeTarget "MyPortfolioWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A192572627F0325D007FBB63 /* Debug */,
