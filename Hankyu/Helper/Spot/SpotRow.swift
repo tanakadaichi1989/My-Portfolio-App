@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SpotRow: View {
     @EnvironmentObject private var modelData: ModelData
+    @State var showSpotDetail = false
     var line: Line
     var spots: [Spot]
     
@@ -30,8 +31,8 @@ struct SpotRow: View {
             ScrollView(.horizontal,showsIndicators: false) {
                 HStack {
                     ForEach(spots,id:\.self){ spot in
-                        NavigationLink(destination: {
-                            SpotDetail(spot: spot)
+                        Button(action: {
+                            self.showSpotDetail.toggle()
                         }, label: {
                             SpotItem(spot: spot)
                         })
