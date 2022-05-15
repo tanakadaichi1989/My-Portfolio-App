@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SpotDetail: View {
     @EnvironmentObject var modelData: ModelData
+    @Environment(\.presentationMode) var presentationMode
+    
     var spot: Spot
     
     var spotIndex: Int {
@@ -50,20 +52,15 @@ struct SpotDetail: View {
             
             MapView(coordinate: spot.getLocation())
                 .frame(height: 300)
+        
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("閉じる")
+            })
+            .buttonStyle(.borderedProminent)
             
             Spacer()
         }
-    }
-}
-
-struct SpotDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        SpotDetail(spot: ModelData().spots[5])
-            .environmentObject(ModelData())
-            .previewDevice("iPhone 8")
-        
-        SpotDetail(spot: ModelData().spots[5])
-            .environmentObject(ModelData())
-            .previewDevice("iPad (9th generation)")
     }
 }

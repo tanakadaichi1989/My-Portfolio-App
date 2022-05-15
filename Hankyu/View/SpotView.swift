@@ -11,6 +11,7 @@ import SwiftUI
 // Article
 // Spot
 struct SpotView: View {
+    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var  modelData: ModelData
     
     var featuredSpot: Spot {
@@ -19,7 +20,7 @@ struct SpotView: View {
 
     var body: some View {
         GeometryReader { geometry in
-            NavigationView {
+
                 List {
                     FeaturedSpotView(spot: featuredSpot)
                         .scaledToFill()
@@ -30,10 +31,9 @@ struct SpotView: View {
                     }
                     .listRowInsets(EdgeInsets())
                 }
-                .navigationTitle("おでかけスポット")
+
             }
         }
-    }
 }
 
 struct SpotView_Previews: PreviewProvider {
